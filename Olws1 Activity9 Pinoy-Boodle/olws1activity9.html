@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pinoy Boodle</title> 
 <style>
 body {
   font-family: "Arial Black", "Arial bold", Gadget, sans-serif;
@@ -49,11 +50,38 @@ body {
 .input[type=text]:focus {
   width: 30%;
 }
-.main {
+.main{
   padding: 16px;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+.menu{
+  width: 100%;
+}
+
+}
+
+
+/* ********************************** MEDIA QUERIES (SMALL DEVICES) *************** */
+@media screen and (max-width: 600px) {  
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+.menu{
+  width: 100%;
+}
+}
 .bgimg {
+  padding: 16px;
+  margin-top: 30px;
   background-repeat: no-repeat;
   background-size: 100% 90%;
   background-image: url("bg.jpeg");
@@ -156,12 +184,11 @@ h1 {
   font-size: 3em;
   color: white;
 }
-</head>
-<body>
-</style>
 
-</head>
-<body>
+</style>
+    </head>
+
+      <body>
 
 <div class="navbar">
 <a href="#">HOME</a>
@@ -170,16 +197,21 @@ h1 {
   <a href="#contact">CONTACT</a>
   <input class="input" type="text" placeholder="Search..." name="search">
 </div>
-<div class="main bgimg">
+
+<div class="main">
+<div class="bgimg">
 </div>
-<div id="menu">
+</div>
+<div id="menu" class="menu">
 <img src="titlemenu.jpg" style="width:100%">
 <div class="container green pullRightLeft" id="fixednav">
   <a href="#fixednav" onclick="document.getElementById('myImage').src='menu1.jpg'"><b>BOODLE</b></a>
   <a href="#fixednav" onclick="document.getElementById('myImage').src='menu2.jpg'"><b>ALA CARTE</b></a>
   <a href="#fixednav" onclick="document.getElementById('myImage').src='menu3.jpg'"><b>DESSERTS</b></a>
 </div>
+
 <img id="myImage" src="menu1.jpg" style="width:100%;">
+</div>
 <div id="about" style="background-color: green;">
 <br>
 <br>
@@ -188,7 +220,7 @@ h1 {
 <center>
 <a href="about.img1.jpg"><img class="img1" src="about.img1.png" style="width:70%; height:500px;"></a>
 </center>
-<p>&emsp;&emsp;&emsp;&emsp;Fiesta Boodle is brought about by the proponent’s desire to meet 
+<p>&emsp;&emsp;&emsp;&emsp;Fiesta Boodle is brought about by the proponentï¿½s desire to meet 
 the specific needs and demands of customers for healthy, 
 clean/sanitary, satisfying but affordable/reasonable meals. 
 His passion for cooking is confirmed by two millennial nephews 
@@ -199,14 +231,14 @@ nding an appropriate location is the key. When he finally
 thought that an appropriate location near the school may be feasible, 
 he thought of realizing his dream of starting his own small food business 
 and eventually create a food brand on his own as he explores what food 
-products are saleable in his target market – lower B to upper B market eventually. 
+products are saleable in his target market ï¿½ lower B to upper B market eventually. 
 This particular venture however targets the students whose budget
 and purchasing power may be limited.
 <br>
 <br>
 <br>
 <a href="about.img2.jpg"><img class="img2" src="about.img2.jpg" style="width:600px; height:400px; margin-left:100px; margin-right:20px;  float: right;"></a>
-While there are a lot of fast food and “dirty-unsanitary carenderia” 
+While there are a lot of fast food and ï¿½dirty-unsanitary carenderiaï¿½ 
 near the school including the nearby market, we believe that we still 
 have a niche to get a certain percentage of the market share who may be price insensitive. 
 Target market are primarily students of ICCT Colleges and other 
@@ -220,8 +252,8 @@ Related Diversification (adding new but related products or services) and Produc
 While there may be competition with other food service restaurants 
 that are competing directly with a specific menu of the proposed restaurant, 
 we will employ Product Differentiation and Best-Value Focus Strategy 
-by serving healthy, quality, clean/sanitary and delicious “Pinoy Comfort Food” 
-at  reasonable (“affordable”) price or at the best price-value available on the market. 
+by serving healthy, quality, clean/sanitary and delicious ï¿½Pinoy Comfort Foodï¿½ 
+at  reasonable (ï¿½affordableï¿½) price or at the best price-value available on the market. 
 We will be serving lunch, merienda and dinner. We will serve breakfast if the market warrants.
 near the school including the nearby market, we believe that we still 
 have a niche to get a certain percentage of the market share who may be price insensitive.
@@ -242,8 +274,8 @@ Related Diversification (adding new but related products or services) and Produc
 While there may be competition with other food service restaurants 
 that are competing directly with a specific menu of the proposed restaurant, 
 we will employ Product Differentiation and Best-Value Focus Strategy 
-by serving healthy, quality, clean/sanitary and delicious “Pinoy Comfort Food” 
-at  reasonable (“affordable”) price or at the best price-value available on the market. 
+by serving healthy, quality, clean/sanitary and delicious ï¿½Pinoy Comfort Foodï¿½ 
+at  reasonable (ï¿½affordableï¿½) price or at the best price-value available on the market. 
 We will be serving lunch, merienda and dinner. We will serve breakfast if the market warrants.
 near the school including the nearby market, we believe that we still 
 have a niche to get a certain percentage of the market share who may be price insensitive. 
@@ -261,8 +293,8 @@ Related Diversification (adding new but related products or services) and Produc
 While there may be competition with other food service restaurants 
 that are competing directly with a specific menu of the proposed restaurant, 
 we will employ Product Differentiation and Best-Value Focus Strategy 
-by serving healthy, quality, clean/sanitary and delicious “Pinoy Comfort Food” 
-at  reasonable (“affordable”) price or at the best price-value available on the market.</p>
+by serving healthy, quality, clean/sanitary and delicious ï¿½Pinoy Comfort Foodï¿½ 
+at  reasonable (ï¿½affordableï¿½) price or at the best price-value available on the market.</p>
 </div>
 <div id="contact">
 <br>
@@ -305,7 +337,7 @@ have faith in almighty everything will be alright in the end.</q></p>
 <hr id="rating">
 <br>
 <h2 style="color:black;">RATING A STARS</h2>
-<img id="star" src="contact.img1.jpg" style="width:30% height:10%">
+<img id="star" src="contact.img1.jpg" style="width:30%; height:10%;">
 <br>
 <a href="#rating"><button onclick="document.getElementById('star').src='contact.img2.jpg'">1</button></a>
 <a href="#rating"><button onclick="document.getElementById('star').src='contact.img3.jpg'">2</button></a>

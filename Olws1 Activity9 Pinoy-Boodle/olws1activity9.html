@@ -54,41 +54,19 @@ body {
   padding: 16px;
   margin-top: 30px;
 }
-
-@media screen and (max-width: 1024px) {
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  max-width: 600px;
-}
-.menu{
-  width: 100%;
-}
-
-}
-
-
-/* ********************************** MEDIA QUERIES (SMALL DEVICES) *************** */
-@media screen and (max-width: 600px) {  
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  max-width: 600px;
-}
-.menu{
-  width: 100%;
-}
-}
 .bgimg {
-  padding: 16px;
+  padding-top: 16px;
   margin-top: 30px;
   background-repeat: no-repeat;
-  background-size: 100% 90%;
+  background-size: 100% 100%;
   background-image: url("bg.jpeg");
-  padding: 350px;
+  padding-bottom: 350px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.imgtitlemenu{
+    width: 100%;
+  }
 div.pullRightLeft a:before, div.pullRightLeft a:after
 {
     overflow: hidden;
@@ -139,27 +117,10 @@ div.container a
 {
     background: green;
 }
-.img14:hover {
+.img14:hover, .img15:hover,.img16:hover, .img17:hover, .img18:hover, .img19:hover,.img20:hover {
   opacity: 0.5;
 }
-.img15:hover {
-  opacity: 0.5;
-}
-.img16:hover {
-  opacity: 0.5;
-} 
-.img17:hover {
-  opacity: 0.5;
-}
-.img18:hover {
-  opacity: 0.5;
-}
-.img19:hover {
-  opacity: 0.5;
-}
-.img20:hover {
-  opacity: 0.5;
-}
+
 p { 
   font: 25px Arial, sans-serif;
   color: white;
@@ -168,6 +129,7 @@ p {
   padding-bottom: 30px;
   
 }
+
 h5 { 
   font-size: .75em;
 }
@@ -185,6 +147,18 @@ h1 {
   color: white;
 }
 
+@media only screen and (max-width:800px) {
+  .main, .navbar,  .imgtitlemenu,  .menu, .about, .contact, .info {
+    width: 700px;
+  }
+  /* For tablets: */
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .main, .navbar,  .imgtitlemenu,  .menu, .about, .contact, .info {
+    width: 700px;
+  }
+}
 </style>
     </head>
 
@@ -198,13 +172,13 @@ h1 {
   <input class="input" type="text" placeholder="Search..." name="search">
 </div>
 
-<div className="main">
+<div class="main">
 <div class="bgimg">
 </div>
 </div>
-<div id="menu" className="menu">
-<img src="titlemenu.jpg" style="width:100%">
-<div class="container green pullRightLeft" id="fixednav">
+<div id="menu" class="menu">
+<img src="titlemenu.jpg" class="imgtitlemenu">
+<div class="container green pullRightLeft menulist" id="fixednav">
   <a href="#fixednav" onclick="document.getElementById('myImage').src='menu1.jpg'"><b>BOODLE</b></a>
   <a href="#fixednav" onclick="document.getElementById('myImage').src='menu2.jpg'"><b>ALA CARTE</b></a>
   <a href="#fixednav" onclick="document.getElementById('myImage').src='menu3.jpg'"><b>DESSERTS</b></a>
@@ -212,7 +186,7 @@ h1 {
 
 <img id="myImage" src="menu1.jpg" style="width:100%;">
 </div>
-<div id="about" style="background-color: green;">
+<div id="about" style="background-color: green;" class="about">
 <br>
 <br>
 <h1 align="center">ABOUT</h1>
@@ -237,7 +211,7 @@ and purchasing power may be limited.
 <br>
 <br>
 <br>
-<a href="about.img2.jpg"><img class="img2" src="about.img2.jpg" style="width:600px; height:400px; margin-left:100px; margin-right:20px;  float: right;"></a>
+<a href="about.img2.jpg"><img class="img2" src="about.img2.jpg" style="width:600px; height:400px; margin-left:100px; margin-bottom: 20px; margin-right:20px;  float: right;"></a>
 While there are a lot of fast food and �dirty-unsanitary carenderia� 
 near the school including the nearby market, we believe that we still 
 have a niche to get a certain percentage of the market share who may be price insensitive. 
@@ -296,7 +270,7 @@ we will employ Product Differentiation and Best-Value Focus Strategy
 by serving healthy, quality, clean/sanitary and delicious �Pinoy Comfort Food� 
 at  reasonable (�affordable�) price or at the best price-value available on the market.</p>
 </div>
-<div id="contact">
+<div id="contact" class="contact">
 <br>
 <br>
 <br>
@@ -382,7 +356,7 @@ have faith in almighty everything will be alright in the end.</q></p>
 </div>
 <br>
 <br>
-<div style="background-color:black;">
+<div style="background-color:black;" class="info">
 <center>
 <br>
 <div style="background-color:green;">

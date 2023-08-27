@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body background="bg.png" style="background-size:100% 650px; background-repeat: no-repeat;">
+<center>
+<form>	
+<b style="background-color:white;">Gross Salary:</b>
+<input type="text" placeholder="Enter Gross Salary" id="Text1" name="TextBox1">
+<h4>-Annual Salary
+<br>
+-wages
+<br>
+overtime
+<br>
+-bonuses
+<br>
+-sick day
+<br>
+-commission
+<br>
+-holiday pay
+<br>
+-loans or advance</h4>
+<h1>Minus(-)</h1>
+<b style="background-color:white;">Tax and other Deductions:</b>
+<input type="text" placeholder="Enter Tax" id="Text2" name="TextBox2">
+<h4>-SSS
+<br>
+-Philhealth
+<br>
+-Pag-IBIG
+<br>
+-Other Deductions</h4>
+<input type="hidden" id="txtresult">
+<br>
+<br>
+<input type="button" name="clickbtn" value="Net Salary" onclick="add_number()">
+<input type="reset" value="Reset" onclick="clearText()" />
+</form>
+</center>
+<script>
+ function add_number() {
+
+           
+                var first_number = parseInt(document.getElementById("Text1").value);
+                var second_number = parseInt(document.getElementById("Text2").value);
+                var result = first_number - second_number;
+     
+                document.getElementById("txtresult").value = result;
+		alert(txtresult.value)
+            }
+</script>
+</body>
+</html>

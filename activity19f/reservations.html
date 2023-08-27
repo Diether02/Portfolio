@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>reservations</title>
+
+</head>
+<body>
+<center>
+<h1>HOTEL RESERVATION</h1>
+<br>
+<form>
+<label for="fname">Full name*:</label>
+<br>
+<input type="text" id="fname" name="fname" placeholder="FirstName LastName" required>
+<br>
+<label for="email">Email address*:</label>
+<br>
+<input type="text" id="email" name="email" placeholder="EMAIL_ADDRESS" required>
+<br>
+<label for="email">Arrival date*:</label>
+<br>
+<input type="date" id="date" name="date" placeholder="m/d/y" required>
+<br>
+<label for="person">Number of persons*:</label>
+<br>
+<input type="number" id="person" name="person" placeholder="UNKNOWN_TYPE">
+<br>
+<label for="discount">Discount coupon code:</label>
+<br>
+<input type="password" id="coupon" name="coupon" placeholder="UNKNOWN_TYPE">
+<br>
+<label>Term and Condition*</label>
+<br>
+<input type="radio" id="agree" name="termcondition" value="agree" required>
+  <label for="female">I agree</label>
+  <input type="radio" id="disagree" name="termcondition" value="disagree" required>
+  <label for="other">I disagree</label>
+<br>
+<input type="submit" value="Complete reservation">
+</form>
+<br>
+<h1>SCHEDULE</h1>
+<table border = "1" cellpadding = "5" cellpadding = "5">
+<caption style="color:red;"><big>travelling time shedule</big></caption> 
+  <tr>
+    <th width="230">Time</th>
+    <th width="120">Monday</th>
+    <th width="120">Tuesday</th>
+    <th width="120">Wednesday</th>
+    <th width="120">Thursday</th>
+    <th width="120">Friday</th>
+    <th width="120">Saturday</th>
+    <th width="120">Sunday</th>
+  </tr>
+  <tr>
+    <td>6-10am</td>
+    <td>available</td>
+    <td bgcolor = "green">non-available</td>
+    <td>availble</td>
+    <td>available</td>
+    <td>available</td>
+    <td>available</td>
+    <td bgcolor = "green">non-available</td>
+  </tr>
+  <tr>
+    <td>10:30-12pm</td>
+    <td>available</td>
+    <td>availble</td>
+    <td bgcolor = "green">non-available</td>
+    <td bgcolor = "green">non-available</td>
+    <td>available</td>
+    <td bgcolor = "green">non-available</td>
+    <td bgcolor = "green">non-available</td>
+  </tr>
+  <tr>
+  
+  <td>1-3pm</td>
+    <td bgcolor = "green">non-available</td>
+    <td>available</td>
+    <td>availble</td>
+    <td>available</td>
+    <td>available</td>
+    <td>available</td>
+    <td bgcolor = "green">non-available</td>
+  </tr>
+  <tr> 
+   <td>3:30-5pm</td>
+    <td>available</td>
+    <td>availble</td>
+    <td>available</td>
+    <td>available</td>
+    <td bgcolor = "green">non-available</td>
+    <td bgcolor = "green">non-available</td>
+    <td bgcolor = "green">non-available</td>
+  </tr>
+</table>
+</center>
+</body>
+
+</html>

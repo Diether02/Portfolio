@@ -1,0 +1,83 @@
+﻿﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Diether C. Gutierrez</title>
+
+</head>
+
+<body>
+
+<h1 style="background-color: gold; text-align:center;">
+<a href="homepage.html">HOME|</a>
+<br>
+<a href="schedule.html">SCHEDULE|</a>
+<br>
+<a href="pictures.html">PICTURES|</a>
+<br>
+<a href="about.html">ABOUT|</a>
+<br>
+<a href="contacts.html">CONTACTS|</a>
+<br>
+<a href="lessons.html">OLWS1 LESSONS</a>
+</h1>
+<center>
+<h1>TRAVEL RESERVATION</h1>
+</center>
+<br>
+<br>
+<h3>Travel reservation form</h3>
+<h5>*denotes mandatory</h5>
+<form>
+<label for="fname">Full name*:</label>
+<br>
+<input type="text" id="fname" name="fname" placeholder="FirstName LastName" required>
+<br>
+<label for="email">Email address*:</label>
+<br>
+<input type="text" id="email" name="email" placeholder="EMAIL_ADDRESS" required>
+<br>
+<label for="cars">Select Tour Package*:</label>
+<br>
+  <select name="tour" id="tour">
+    <option value="goa">Goa</option>
+    <option value="goa1">Goa1</option>
+    <option value="goa2">Goa2</option>
+    <option value="goa3">Goa3</option>
+  </select>
+  <br>
+<label for="email">Arrival date*:</label>
+<br>
+<input type="date" id="date" name="date" placeholder="m/d/y" required>
+<br>
+<label for="person">Number of persons*:</label>
+<br>
+<input type="number" id="person" name="person" placeholder="UNKNOWN_TYPE">
+<br><label>What would you want to avail?*</label><br>
+<label>boarding</label>
+<input type="checkbox" id="boarding" name="avail" value="boarding">
+<br>
+<label>fooding</label>
+<input type="checkbox" id="fooding" name="avail" value="fooding">
+<br>
+<label>sight seeing</label>
+<input type="checkbox" id="sight" name="avail" value="sight seeing">
+<br>
+<label for="discount">Discount coupon code:</label>
+<br>
+<input type="password" id="coupon" name="coupon" placeholder="UNKNOWN_TYPE">
+<br>
+<label>Term and Condition*</label>
+<br>
+<input type="radio" id="agree" name="termcondition" value="agree" required>
+  <label for="female">I agree</label>
+  <input type="radio" id="disagree" name="termcondition" value="disagree" required>
+  <label for="other">I disagree</label>
+<br>
+<input type="submit" value="Complete reservation">
+</form>
+</body>
+
+</html>
